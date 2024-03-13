@@ -1,0 +1,234 @@
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v19-cyrillic_latin-regular.eot");
+  src: url("../fonts/play-v19-cyrillic_latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/play-v19-cyrillic_latin-regular.woff2") format("woff2"),
+    url("../fonts/play-v19-cyrillic_latin-regular.woff") format("woff"),
+    url("../fonts/play-v19-cyrillic_latin-regular.ttf") format("truetype"),
+    url("../fonts/play-v19-cyrillic_latin-regular.svg#Play") format("svg");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-cyrillic_latin-700.eot");
+  src: url("../fonts/play-v19-cyrillic_latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/play-v19-cyrillic_latin-700.woff2") format("woff2"),
+    url("../fonts/play-v19-cyrillic_latin-700.woff") format("woff"),
+    url("../fonts/play-v19-cyrillic_latin-700.ttf") format("truetype"),
+    url("../fonts/play-v19-cyrillic_latin-700.svg#Play") format("svg");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-cyrillic_latin-regular.eot");
+  src: url("../fonts/roboto-v30-cyrillic_latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/roboto-v30-cyrillic_latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-v30-cyrillic_latin-regular.woff") format("woff"),
+    url("../fonts/roboto-v30-cyrillic_latin-regular.ttf") format("truetype"),
+    url("../fonts/roboto-v30-cyrillic_latin-regular.svg#Roboto") format("svg");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-cyrillic_latin-500.eot");
+  src: url("../fonts/roboto-v30-cyrillic_latin-500.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/roboto-v30-cyrillic_latin-500.woff2") format("woff2"),
+    url("../fonts/roboto-v30-cyrillic_latin-500.woff") format("woff"),
+    url("../fonts/roboto-v30-cyrillic_latin-500.ttf") format("truetype"),
+    url("../fonts/roboto-v30-cyrillic_latin-500.svg#Roboto") format("svg");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-cyrillic_latin-700.eot");
+  src: url("../fonts/roboto-v30-cyrillic_latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/roboto-v30-cyrillic_latin-700.woff2") format("woff2"),
+    url("../fonts/roboto-v30-cyrillic_latin-700.woff") format("woff"),
+    url("../fonts/roboto-v30-cyrillic_latin-700.ttf") format("truetype"),
+    url("../fonts/roboto-v30-cyrillic_latin-700.svg#Roboto") format("svg");
+}
+
+:root {
+  --color-brand-main: #011c44;
+  --color-brand-light: #2b7ff4;
+  --color-secondary-dark: #000000;
+  --color-secondary-light: #ffffff;
+  --color-third-dark: #4a4a4a;
+  --color-third-light: #747272;
+}
+
+/* BASE */
+
+body {
+  color: var(--color-brand-main);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.17;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* h2 {  font-family: "Play";} */
+
+.section-title {
+  font-family: "Play";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.section-title .accent {
+  color: var(--color-brand-light);
+}
+
+/* Button */
+.button {
+  color: var(--color-secondary-light);
+  background-color: var(--color-brand-light);
+  border-radius: 32px;
+  border: 2px solid var(--color-brand-light);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.button:hover {
+  color: var(--color-brand-main);
+  background-color: transparent;
+}
+
+/* Link section */
+
+.link-header {
+  color: var(--color-brand-main);
+  text-decoration: none;
+}
+
+.link-header:hover {
+  color: var(--color-brand-light);
+  font-weight: 700;
+}
+
+.link-footer {
+  color: var(--color-secondary-light);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.icons-link:hover {
+  color: var(--color-brand-light);
+} /* не працює */
+
+.footer .icons-link {
+  color: var(--color-secondary-light);
+} /* не працює */
+
+/* Hero section */
+
+.hero-title {
+  color: var(--color-brand-light);
+  font-family: "Play";
+  font-size: 140px;
+  text-transform: capitalize;
+  line-height: 0.82;
+}
+
+.under-button-title {
+  color: var(--color-third-dark);
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* about-us-section */
+
+.about-us {
+  font-size: 22px;
+  line-height: 1.73;
+  text-align-last: left;
+}
+
+.about-us .accent {
+  text-transform: capitalize;
+}
+
+/* arguments-section */
+
+.argument-text {
+  color: var(--color-secondary-dark);
+  line-height: 1.33;
+  text-align: center;
+  column-count: 3;
+}
+
+/* procedures-section */
+
+.procedures-text {
+  color: var(--color-secondary-dark);
+  font-size: 22px;
+  line-height: 1.18;
+  text-align: center;
+  column-count: 3; /*як вирівняти колонки?*/
+}
+
+/* contakts-section */
+
+.text-contakts {
+  color: var(--color-secondary-light);
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.text-contakts .accent {
+  color: var(--color-brand-light);
+}
+
+.under-button-contakts {
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-third-light);
+}
+
+.address-link-contakts {
+  color: var(--color-third-light);
+}
+
+/* footer */
+
+.address-link {
+  color: var(--color-secondary-light);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.address-copyright {
+  font-size: 13px;
+  color: var(--color-third-light);
+}
